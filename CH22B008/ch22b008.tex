@@ -1,0 +1,33 @@
+\documentclass[12pt,pdftex]{article}
+\usepackage{pslatex}
+\usepackage[top=0in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage{float, hyperref}
+\usepackage{amssymb, amsmath, amsfonts}
+\renewcommand*\ttdefault{txtt}
+\renewcommand*\familydefault{\ttdefault}
+\usepackage[T1]{fontenc}
+
+\title{ID2090 : Assignment 4}
+\author{Aayush Bhakna : CH22B008}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\thispagestyle{empty}
+	\vspace{1cm}
+	\section{CH22B008}
+	\subsection{Student-Info}
+		\textbf{FULL NAME}: Aayush Bhakna \\
+		\textbf{GITHUB ID}: Bhakna \\
+		\textbf{GITHUB PAGE}: \url{https://github.com/Bhakna} \\
+	\subsection{Equation}
+		\vspace{0.5cm}
+		\begin{align*}
+			y_{n+1} = \mu y_n[1 - y_n]
+		\end{align*}\\
+		The above given equation is known as the \textit{logistic difference equation}\footnotemark. \\\\This equation was initially created to approximately represent the population of non-human species of animals. The $y_n$ is a number between zero and one, which represents the ratio of existing population to the maximum possible population. This nonlinear difference equation is intended to capture two effects -\\ \textbf{reproduction} and \textbf{starvation}. The usual values of interest for the parameter $\mu$ are those in the interval $[0, 4]$, so that $y_n$ remains bounded on $[0, 1]$.\\\\
+		It is to be noted that this equation is now used as an example to show the\\ behaviour of chaos and study it's applications and unusual appearances in nature.
+		
+	\footnotetext{J.O. Adeleke, "Analysis of Logistic Maps" Page-19, doi:\href{https://dx.doi.org/10.13140/RG.2.2.27790.23367}{10.13140/RG.2.2.27790.23367} 
+	}
+\end{document}

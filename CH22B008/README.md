@@ -1,3 +1,8 @@
-# CH22B008
-Keep all your files in the folder corresponding to your roll number
-The command make should result in creation of a pdf file in this folder
+Dear reader,
+
+Please be informed that the Makefile in this directory was written using 'pdflatex' and 'xpdf'.
+As such please install this in your LINUX system if missing or not already installed.
+
+Regards
+Aayush Bhakna
+CH22B008
