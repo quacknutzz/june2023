@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+
+\title{Leibniz Integral Rule}
+\author{Om Mineeyar}
+\date{10 June 2023}
+
+\begin{document}
+
+\maketitle
+
+\section*{CH22B014}
+In calculus, the Leibniz integral rule for differentiation under the integral sign states that for an integral of the form
+\begin{equation}
+	\int_{a(x)}^{b(x)}{f(x,t)dt}
+\end{equation}
+where $|{a(x),b(x)}|>{\infty}$ and the integrands are functions dependent on $x$, the derivative of this integral is expressible as
+\begin{equation}
+    {\displaystyle {\frac {d}{dx}}\left(\int _{a}^{b}f(x,t)\,dt\right)=\int _{a}^{b}{\frac {\partial }{\partial x}}f(x,t)\,dt.}
+\end{equation}
+If $a(x)=a$ is constant and $b(x)=x$, which is another common situation (for example, in the proof of Cauchy's repeated integration formula), the Leibniz integral rule becomes:
+\begin{equation}
+{{\frac {d}{dx}}\left(\int _{a}^{x}f(x,t)\,dt\right)=f{(x,x)}+\int _{a}^{x}{\frac {\partial }{\partial x}}f(x,t)\,dt}
+\end{equation}
+\Large{General form: differentiation under the integral sign}
+\normalsize
+\newline
+\newline
+Theorem — Let $f(x,t)$ be a function such that both $f(x,t)$ and its partial derivative $f_{x}(x,t)$ are continuous in $t$ and $x$ in some region of the 
+$xt$-plane, including $a(x){\le}t{\le}b(x)$, $x_o{\le}x{\le}x_1$. .Also suppose that the functions $a(x)$ and $b(x)$ are both continuous and both have continuous derivatives for  $x_o{\le}x{\le}x_1$. Then for  $x_o{\le}x{\le}x_1$,
+\begin{equation}
+{{\frac {d}{dx}}\left(\int _{a(x)}^{b(x)}f(x,t)\,dt\right)=f(x,b(x))\,b^{\prime }(x)-f(x,a(x))\,a^{\prime }(x)+\displaystyle \int _{a(x)}^{b(x)}f_{x}(x,t)\,dt.}
+\end{equation}
+\footnotetext[0]{\href{https://en.wikipedia.org/wiki/Leibniz_integral_rule}{https://en.wikipedia.org/wiki/Leibniz\_integral\_rule}}
+\end{document}
