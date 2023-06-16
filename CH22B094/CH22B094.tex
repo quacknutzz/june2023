@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Assignment 4 - ID2090}
+\author{S Sriram Prashanth ch22b094}
+\date{June 2023}
+
+\begin{document}
+
+\maketitle
+\begin{center}
+    USER ID: Sriram642005
+\end{center}
+
+\clearpage
+\section{Gram-Schmidt orthogonalization}
+Let $v_1,v_2,v_3...v_n \in F^n$. We say that these vectors are orthogonal if and only if $\langle v_i, v_j \rangle = 0$ for all pairs of indices i and j with $ i \neq j$.
+\begin{itemize}
+    \item If a set of vectors cannot be written in a linear combination until all the coefficients in the combinations are zero, then they are called linearly independent vectors.
+    \item Linear independence of a finite list of vectors can be determined using inner product.
+    \item Any orthogonal list of non-zero vectors is linearly independent.
+\end{itemize}
+It will be convenient to use the following terminology. We denote the set of all
+linear combinations of vectors $v_1,v_2,v_3...v_n$ by $span(v_1,v_2...v_n)$ 
+The procedure of Gram-Schmidt orthogonalization, constructs orthogonal vectors $v_1,v_2,...,v_n$ from the given vectors $u_1,u_2,...,u_n$ so that,
+\begin{center}
+    span$(v_1,v_2,...,v_n)$ = span$(u_1,u_2,...,u_n)$, $k \leq m$.
+\end{center}
+The theorm defines $v_1$ = $u_1$ and all subsequent terms of the form $v_m$ are given as:
+\begin{equation}
+    v_m = u_m - ( \langle u_m,v_1 \rangle / \langle v_1,v_1 \rangle ) v_1 - ... - ( \langle u_m,v_{m-1} \rangle / \langle v_{m-1},v_{m-1} \rangle ) v_{m-1} \cite{MA1102}
+\end{equation}
+In the above process if $u_i$ is 0, then both $u_i$ and $v_i$ are ignored in the equation.
+\bibliographystyle{plain}
+\bibliography{References}
+
+\end{document}
